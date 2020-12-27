@@ -1,8 +1,11 @@
 import React from 'react'
-import {Container,BackIcon,Header,ProfileInfo} from './styles'
+import ProfilePage from '../ProfilePage'
+import {motion} from 'framer-motion'
+import {Container,BackIcon,Header,ProfileInfo, HomeIcon,BellIcon,BottomMenu,EmailIcon,SearchIcon} from './styles'
 const Main = () => {
   return(
     <Container>
+      
       <Header>
 
         <button>
@@ -10,14 +13,17 @@ const Main = () => {
         </button>
 
         <ProfileInfo>
-          <strong>Yan de Moura</strong>
+          <strong>Yan Rabelo</strong>
           <span>344 tweets</span>
         </ProfileInfo>
       </Header>
 
-      {/* <ProfilePage /> */}
+      
 
-     <BottomMenu>
+
+      <ProfilePage /> 
+
+      <BottomMenu>
         <HomeIcon />
         <SearchIcon />
         <BellIcon />
